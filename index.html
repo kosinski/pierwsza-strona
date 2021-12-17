@@ -1,27 +1,23 @@
 <!-- 
 Na obrazku oczekiwany_wynik.png przedstawiono trzy paragrafy. Używając poniższych wskazówek, dodać odpowiednie style, aby osiągnąć pożądany rezultat.
 1. Element .info:
-    - krój / tekst
-        - 50% większa od bazowej (font size),
-        - tekst wyśrodkowany (text-align)
-        - z rodziny monospaced (font-family) - https://www.w3schools.com/cssref/css_websafe_fonts.asp
-    - kolor tekstu - #baed91 (color)
-    - kolor ramki - tomato (border)
-    - kolor tla - #000 (background-color)
+    - czcionka 50% większa od bazowej, tekst wyśrodkowany, z rodziny monospaced - https://www.w3schools.com/cssref/css_websafe_fonts.asp
+    - kolor tekstu - #baed91
+    - kolor ramki - tomato
 
 2. Element .warning:
-    - krój / tekst bezszeryfowy (font-family)
-    - kolor tekstu i ramki - rgb(248, 184, 139) (color) (border)
-    - kolor tła - hsl(300, 61%, 33%) (background-color)
-    - tekst pisany wielkimi literami (text-transform)
+    - czcionka bezszeryfowa
+    - kolor tekstu i ramki - rgb(248, 184, 139)
+    - kolor tła - hsl(300, 61%, 33%)
+    - tekst pisany wielkimi literami - właściwość text-transform
 
 3. Element .error
-    - krój / tekst szeryfowy (font-family)
-    - kolor ramki - hsl(0, 100%, 64%) (border)
-    - kolor tła - #FFB428 (background-color)
+    - czcionka szeryfowa
+    - kolor ramki - hsl(0, 100%, 64%)
+    - kolor tła - #FFB428
     - każdy wyraz zaczyna się od wielkiej litery (text-transform), cały tekst podkreślony (text-decoration), wyrównany do lewej i prawej (text-align)
     - zaokrąglenia zadeklarowane właściwością 'border-radius'
-
+    
 -->
 
 <!DOCTYPE HTML>
@@ -30,9 +26,54 @@ Na obrazku oczekiwany_wynik.png przedstawiono trzy paragrafy. Używając poniżs
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Strona z przykładowym dokumentem HTML">
-    <title>Moja pierwsza strona HTML i CSS</title>
+    <title>CSS - typogafia</title>
 
     <style>
+        #font {
+            background: #cacaca;
+            padding: 20px;
+        }
+
+        .info {
+            font-family: Courier, monospace;
+            color: #baed91;
+            text-align: center;
+            font-style: italic;
+            background: black;
+            padding: 10px;
+            border: 3px solid tomato;
+            font-size: 1.5em;
+
+        }
+
+        .warning {
+            font-family: "Comic Sans MS", sans-serif;
+            color: #f8b88b;
+            font-weight: bold;
+            background: #872187;
+            padding: 20px 10px;
+            border: 3px solid #f8b88b;
+            font-size: 12px;
+            text-align: right;
+            text-transform: uppercase;
+
+        }
+
+        .error {
+            font-family: Georgia, serif;
+            color: black;
+            text-align: right;
+            font-weight: bold;
+            text-transform: capitalize;
+            text-align: justify;
+
+            text-decoration: underline;
+            border: 5px solid #FF4848;
+            background: #FFB428;
+            padding: 30px;
+            border-radius: 20px 20px 20px 20px;
+        }
+
     </style>
 </head>
     <body>
